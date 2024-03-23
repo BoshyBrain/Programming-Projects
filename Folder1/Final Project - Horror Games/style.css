@@ -1,0 +1,70 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+  color: aliceblue;
+  margin: 25px;
+  background-image: url(https://raw.githubusercontent.com/BoshyBrain/HTML-Projects/f2d4442309761391c9ea9903aab0f947c1574d99/Folder1/Final%20Project%20-%20Horror%20Games/_0cc47097-1048-4c2b-b3bd-5f8a9835bab7.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Syne mono", monospace;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-family: "Cinzel", serif;
+  margin-top: 5px;
+}
+
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.syne-mono {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button {
+  color: maroon;
+  background-image: url(https://raw.githubusercontent.com/BoshyBrain/HTML-Projects/53be2d52a31b0cb92199c08874f565ab2d4401e6/Folder1/Final%20Project%20-%20Horror%20Games/_7a90bd61-2e10-4aac-9ec1-cf12c723f0f2.jpeg);
+  background-size: cover;
+  font-family: "Syne Mono", monospace;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 0;
+  border-radius: 8px;
+  display: inline-flex;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-image 0.35;
+  -webkit-transition-duration: 0.35s; /* Safari */
+  transition-duration: 0.35s;
+}
+
+.button:hover {
+  cursor: pointer;
+  font-size: large;
+  background-image: url(https://raw.githubusercontent.com/BoshyBrain/HTML-Projects/9be15a363d7b7681cd99b7ab49676d472db22466/Folder1/Final%20Project%20-%20Horror%20Games/IMG_0362.jpeg);
+}
+
+.button:active {
+  box-shadow: 0 5px maroon;
+  transform: translateY(4px);
+  animation-duration: 1;
+}
+
+#img1 {
+  width: 400px;
+  height: 100px;
+  border-radius: 8px;
+}
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }
