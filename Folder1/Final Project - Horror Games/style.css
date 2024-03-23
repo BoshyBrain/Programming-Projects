@@ -3,7 +3,7 @@ selectors). */
 body {
   color: aliceblue;
   margin: 25px;
-  background-image: url(https://raw.githubusercontent.com/BoshyBrain/HTML-Projects/f2d4442309761391c9ea9903aab0f947c1574d99/Folder1/Final%20Project%20-%20Horror%20Games/_0cc47097-1048-4c2b-b3bd-5f8a9835bab7.jpeg);
+  background-image: url(https://raw.githubusercontent.com/BoshyBrain/HTML-Projects/bc3d6667ed7d4d3e87c8c23d6d1fc2e23183d5d7/Folder1/Final%20Project%20-%20Horror%20Games/_0cc47097-1048-4c2b-b3bd-5f8a9835bab7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Syne mono", monospace;
@@ -48,6 +48,7 @@ h1 {
 
 /* settings for a font */
 .cinzel {
+  color: ivory;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -192,7 +193,6 @@ h1 {
   padding: 0 4px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
   .column {
     flex: 50%;
@@ -200,12 +200,57 @@ h1 {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+/* Instructions for "SOMA" page */
+
+.simon_table {
+  margin: 15px;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.simon_table tr:first-child {
+  border-bottom: 1px solid black;
+}
+
+.simon_table tr:not(:first-child) {
+  border: none;
+}
+
+.catherine_table {
+  float: inline-end;
+  margin: 15px;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.catherine_table tr:first-child {
+  border-bottom: 1px solid black;
+}
+
+.catherine_table tr:not(:first-child) {
+  border: none;
+}
+
+.table-container {
+  overflow: hidden; /* Clear float */
+}
+
+.simon_table {
+  float: left;
+    width: 10%; /* Adjust as needed */
+    margin-right: 10px; /* Add space between tables */
+}
+
+.catherine_table {
+  float: left;
+  width: 10%; /* Adjust as needed */
 }
 /* Applies to all elements with <... class="someclass"> specified. */
 .someclass { color: red; }
