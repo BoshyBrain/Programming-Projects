@@ -1,0 +1,12 @@
+<p>
+    Phones for all - choose your phone for today
+</p>
+<ul class="list-group">
+    <li class="list-group-item" 
+    [class.active]="phone === selectedPhone"
+    *ngFor='let phone of phones'
+    (click)="phoneSelected(phone)"> {{phone.producer+'&nbsp;'+phone.name}}  </li>
+</ul>
+<p>&nbsp;</p>
+<input *ngIf="selectedPhone" class="btn btn-primary" type="button" (click)="selectedPhone=undefined" value="בטל הבחירה"/>
+<app-current-phone [currentPhone]="selectedPhone"></app-current-phone>
